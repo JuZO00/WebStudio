@@ -1,0 +1,78 @@
+:root {
+  --text-color: #ffffff;
+  --background-color: #2f303a;
+  --button-color: #2196f3;
+}
+.navigation > li > a {
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 14px;
+}
+.gmail-number > li > a {
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 14px;
+}
+.title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 44px;
+}
+.order-service {
+  background-color: var(--background-color);
+}
+.title {
+  color: var(--text-color);
+}
+.button-1 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+}
+.list > li > h4 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 14px;
+}
+.list > li > p {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 14px;
+}
+h2 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 36px;
+}
+.team > li > h3 {
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 16px;
+}
+.team > li > p {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 16px;
+}
+.footer {
+  background-color: var(--background-color);
+}
+.footer > ul {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 14px;
+}
+footer > ul > li > p {
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.button-1{
+  border: none;
+}
