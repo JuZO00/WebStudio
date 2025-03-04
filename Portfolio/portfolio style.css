@@ -3,6 +3,11 @@
   --background-color: #2f303a;
   --button-color: #2196f3;
 }
+body{
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: normal;
+}
 ul {
   list-style: none;
 }
