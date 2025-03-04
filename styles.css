@@ -13,7 +13,6 @@ body {
   color: var(--text-color);
 }
 .navigation > li > a {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -25,7 +24,6 @@ body {
   color: var(--button-color);
 }
 .gmail-number > li > a {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -37,7 +35,6 @@ body {
   color: var(--button-color);
 }
 .order-service h1 {
-  font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;
   letter-spacing: 6%;
@@ -48,7 +45,6 @@ body {
   background-color: var(--background-color);
 }
 .button-1 {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 6%;
@@ -61,7 +57,6 @@ body {
   width: 216px;
 }
 .list > li > h4 {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 3%;
@@ -69,7 +64,6 @@ body {
   color: var(--text-color);
 }
 .list > li > p {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 3%;
@@ -77,7 +71,6 @@ body {
   color: var(--two-colr);
 }
 h2 {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 3%;
@@ -86,14 +79,12 @@ h2 {
   color: var(--text-color);
 }
 .team > li > h3 {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: auto;
   columns: var(--text-color);
 }
 .team > li > p {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: auto;
@@ -103,7 +94,6 @@ h2 {
   background-color: var(--background-color);
 }
 .footer > ul > li > p {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;

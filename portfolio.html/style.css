@@ -18,7 +18,6 @@ a {
   text-decoration: none;
 }
 .navigation > li > a {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -30,7 +29,6 @@ a {
   color: var(--button-color);
 }
 .gmail-number > li > a {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -42,7 +40,6 @@ a {
   color: var(--button-color);
 }
 .button1 {
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 3%;
@@ -53,7 +50,6 @@ a {
   height: 38px;
 }
 .button2 {
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 3%;
@@ -64,7 +60,6 @@ a {
   height: 38px;
 }
 .button3 {
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 3%;
@@ -75,7 +70,6 @@ a {
   height: 38px;
 }
 .button4 {
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 3%;
@@ -86,7 +80,6 @@ a {
   height: 38px;
 }
 .button5 {
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 3%;
@@ -103,28 +96,24 @@ a {
   color: var(--col);
 }
 h4 {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--text-color);
 }
 .project-nav > li > p {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
   color: var(--all-color);
 }
 .footer > ul > li > p {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 color: var(--col);
 }
 .footer > ul > li > a {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
