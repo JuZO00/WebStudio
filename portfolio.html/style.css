@@ -1,4 +1,5 @@
 :root {
+  --color-b: #000000;
   --text-color: #212121;
   --background-color: #2f303a;
   --button-color: #2196f3;
@@ -16,6 +17,17 @@ ul {
 }
 a {
   text-decoration: none;
+}
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: var(--color-b);
+}
+.Web {
+  color: var(--button-color);
 }
 .navigation > li > a {
   font-weight: 500;
@@ -36,7 +48,7 @@ a {
   color: var(--all-color);
 }
 .gmail-number > li > a:hover,
-.gmail-number > li > a:focus{
+.gmail-number > li > a:focus {
   color: var(--button-color);
 }
 .button1 {
@@ -107,11 +119,23 @@ h4 {
   line-height: 1.8;
   color: var(--all-color);
 }
+.logo-foot {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: var(--col);
+}
+.web-foot {
+  color: var(--button-color);
+}
+
 .footer > ul > li > p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-color: var(--col);
+  color: var(--col);
 }
 .footer > ul > li > a {
   font-weight: 400;

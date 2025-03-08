@@ -1,4 +1,5 @@
 :root {
+  --col-b: #000000;
   --text-color: #212121;
   --background-color: #2f303a;
   --button-color: #2196f3;
@@ -11,6 +12,17 @@ body {
   font-weight: 400;
   line-height: auto;
   color: var(--text-color);
+}
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: var(--col-b);
+}
+.Web {
+  color: var(--button-color);
 }
 .navigation > li > a {
   font-weight: 500;
@@ -89,6 +101,17 @@ h2 {
   font-size: 16px;
   line-height: auto;
   color: var(--two-colr);
+}
+.logo-foot {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: var(--colr);
+}
+.web-foot {
+  color: var(--button-color);
 }
 .footer {
   background-color: var(--background-color);
