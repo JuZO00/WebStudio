@@ -1,33 +1,45 @@
+* {
+  box-sizing: border-box;
+}
 :root {
-  --color-b: #000000;
+  --col-b: #000000;
   --text-color: #212121;
   --background-color: #2f303a;
   --button-color: #2196f3;
-  --all-color: #757575;
-  --col: #fff;
+  --colr: #ffffff;
+  --two-colr: #757575;
 }
 body {
   font-family: "Roboto";
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: auto;
+  color: var(--text-color);
+  margin: 0 auto;
 }
-ul {
-  list-style: none;
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
-a {
-  text-decoration: none;
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0;
+  margin-bottom: 94px;
 }
-.logo {
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 3%;
-  line-height: auto;
-  color: var(--color-b);
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 519px;
 }
-.Web {
-  color: var(--button-color);
+.navigation {
+  display: flex;
+  gap: 50px;
 }
 .navigation > li > a {
   font-weight: 500;
@@ -40,15 +52,30 @@ a {
 .navigation > li > a:focus {
   color: var(--button-color);
 }
+.gmail-number > li > a:hover,
+.gmail-number > li > a:focus {
+  color: var(--button-color);
+}
+.gmail-number {
+  display: flex;
+  gap: 50px;
+}
 .gmail-number > li > a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--all-color);
+  color: var(--two-colr);
 }
-.gmail-number > li > a:hover,
-.gmail-number > li > a:focus {
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: var(--color-b);
+}
+.Web {
   color: var(--button-color);
 }
 .button1 {
@@ -111,24 +138,74 @@ a {
   padding: 6px 22px 6px 22px;
   margin: 8px;
 }
-
+.nav-button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+}
 .nav-button > li > button:hover,
 .nav-button > li > button:focus {
   background-color: var(--button-color);
-  color: var(--col);
+  color: var(--colr);
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
+.text-project {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 24px;
+}
 h4 {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4px;
+  margin-left: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--text-color);
 }
-.project-nav > li > p {
+.project-nav > li > div > p {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0px;
+  margin-left: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
-  color: var(--all-color);
+  color: var(--two-colr);
+}
+.project-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+.all-project {
+  padding: 0;
+  margin-bottom: 94px;
+}
+.div-contact-logo {
+  width: 231px;
+}
+.footer {
+  display: flex;
+  width: auto;
+  height: 252px;
+  padding-top: 60px;
+  padding-right: 1154px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+  background-color: var(--background-color);
+}
+.div-contact-logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .logo-foot {
   font-family: "Raleway";
@@ -136,24 +213,36 @@ h4 {
   font-weight: 700;
   letter-spacing: 3%;
   line-height: auto;
-  color: var(--col);
+  color: var(--colr);
 }
 .web-foot {
   color: var(--button-color);
 }
-
-.footer > ul > li > p {
+.div-contact-logo p {
+  margin: 0;
+}
+.div-contact-logo p {
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: 3%;
   line-height: 1.7;
-  color: var(--col);
+  letter-spacing: 3%;
+  color: var(--colr);
 }
-.footer > ul > li > a {
-  font-weight: 400;
-  font-size: 14px;
+a {
   line-height: 1.7;
-  color: var(--all-color);
+  color: var(--two-colr);
 }
-.footer {
-  background-color: var(--background-color);
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  gap: 9px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
