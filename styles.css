@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -202,23 +202,16 @@ h2 {
   line-height: auto;
   color: var(--two-colr);
 }
-.div-contact-logo {
-  width: 231px;
-}
 .footer {
   display: flex;
   width: auto;
   height: 252px;
   padding-top: 60px;
-  padding-right: 1154px;
   padding-bottom: 60px;
-  padding-left: 215px;
   background-color: var(--background-color);
 }
 .div-contact-logo {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  width: 231px;
 }
 .logo-foot {
   font-family: "Raleway";
@@ -230,6 +223,12 @@ h2 {
 }
 .web-foot {
   color: var(--button-color);
+}
+.div-contact-logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 1200px;
 }
 .div-contact-logo p {
   margin: 0;
