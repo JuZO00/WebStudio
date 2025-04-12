@@ -28,7 +28,6 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0;
 }
 .logo-nav {
   display: flex;
@@ -248,7 +247,6 @@ a {
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 0;
   margin: 0;
   gap: 9px;
 }
