@@ -244,11 +244,16 @@ a {
   line-height: 1.7;
   color: var(--two-colr);
 }
+.div-contact-logo > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   gap: 9px;
 }
 a {
