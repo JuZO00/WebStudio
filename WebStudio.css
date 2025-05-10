@@ -10,6 +10,7 @@
   --button-color: #2196f3;
   --colr: #ffffff;
   --two-colr: #757575;
+  --team-color: #f5f4fa;
 }
 body {
   font-family: "Roboto";
@@ -123,6 +124,44 @@ body {
   border: none;
   border-radius: 4px;
 }
+.li-1 {
+  width: 270px;
+}
+.li-1::before {
+  content: "";
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+.li-1:nth-child(1)::before {
+  background-image: url(./img/antenna\ 1.png);
+}
+.li-1:nth-child(2)::before {
+  background-image: url(./img/clock\ 1.png);
+}
+.li-1:nth-child(3)::before {
+  background-image: url(./img/diagram\ 1.png);
+}
+.li-1:nth-child(4)::before {
+  background-image: url(./img/astronaut\ 1.png);
+}
+.li-1:nth-child(1) {
+  height: 248px;
+}
+.li-1:nth-child(2) {
+  height: 224px;
+}
+.li-1:nth-child(3) {
+  height: 224px;
+}
+.li-1:nth-child(4) {
+  height: 248px;
+}
 .list {
   display: flex;
   justify-content: space-between;
@@ -173,7 +212,12 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 94px;
+}
+.team > li {
+  height: 368px;
+  padding-bottom: 30px;
+  background-color: var(--colr);
+  border-radius: 0 0 6px 6px;
 }
 .div-team-name {
   display: flex;
@@ -202,6 +246,12 @@ h2 {
   font-size: 16px;
   line-height: auto;
   color: var(--two-colr);
+}
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  height: 648px;
+  background-color: var(--team-color);
 }
 .footer {
   display: flex;

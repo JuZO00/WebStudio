@@ -10,6 +10,7 @@
   --button-color: #2196f3;
   --colr: #ffffff;
   --two-colr: #757575;
+  --border-color: #eeeeee;
 }
 body {
   font-family: "Roboto";
@@ -158,6 +159,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 24px;
+  padding-top: 20px;
 }
 h4 {
   margin-top: 0;
@@ -179,12 +181,18 @@ h4 {
   line-height: 1.8;
   color: var(--two-colr);
 }
+.project-nav > li{
+  height: 404px;
+}
 .project-nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
+}
+.project-nav>li{
+  border: 1px solid var(--border-color);
 }
 .all-project {
   margin-bottom: 94px;
