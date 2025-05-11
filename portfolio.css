@@ -11,6 +11,7 @@
   --colr: #ffffff;
   --two-colr: #757575;
   --border-color: #eeeeee;
+  --border-2: #ececec;
 }
 body {
   font-family: "Roboto";
@@ -26,11 +27,17 @@ body {
   padding: 0 15px;
 }
 .header {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 80px;
+}
+.border {
+  width: 100vw;
+  height: 1px;
+  background-color: var(--border-2);
   margin-bottom: 94px;
 }
 .logo-nav {
@@ -181,7 +188,7 @@ h4 {
   line-height: 1.8;
   color: var(--two-colr);
 }
-.project-nav > li{
+.project-nav > li {
   height: 404px;
 }
 .project-nav {
@@ -191,7 +198,7 @@ h4 {
   gap: 30px;
   padding: 0;
 }
-.project-nav>li{
+.project-nav > li {
   border: 1px solid var(--border-color);
 }
 .all-project {

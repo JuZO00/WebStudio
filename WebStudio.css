@@ -86,6 +86,7 @@ body {
   padding-bottom: 200px;
   padding-left: 452px;
   margin-bottom: 94px;
+  background-image: url(./img/background\ png.png);
   background-color: var(--background-color);
 }
 .order-service h1 {
