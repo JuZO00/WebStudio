@@ -49,24 +49,22 @@ body {
   line-height: auto;
   color: var(--text-color);
 }
-.navigation > li > a:hover,
-.navigation > li > a:focus {
-  color: var(--button-color);
-}
-.gmail-number > li > a:hover,
-.gmail-number > li > a:focus {
-  color: var(--button-color);
-}
-.gmail-number {
+.gmail-head a {
   display: flex;
-  gap: 50px;
-}
-.gmail-number > li > a {
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
   color: var(--two-colr);
+}
+.navigation > li > a:hover,
+.navigation > li > a:focus {
+  color: var(--button-color);
+}
+.gmail-number {
+  display: flex;
+  gap: 50px;
 }
 .logo {
   font-family: "Raleway";
@@ -91,7 +89,7 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./img/background\ png.png);
+    url(./img/background\ png\ sq.jpg);
 }
 .order-service h1 {
   display: flex;
@@ -144,16 +142,20 @@ body {
   border-radius: 6px;
 }
 .li-1:nth-child(1)::before {
-  background-image: url(./img/antenna\ 1.png);
+  background-image: url(./img/antenna.svg);
+  background-size: 65.32px 70px;
 }
 .li-1:nth-child(2)::before {
-  background-image: url(./img/clock\ 1.png);
+  background-image: url(./img/clock\ 1.svg);
+  background-size: 66.96px 70px;
 }
 .li-1:nth-child(3)::before {
-  background-image: url(./img/diagram\ 1.png);
+  background-image: url(./img/diagram\ 1.svg);
+  background-size: 70px 70px;
 }
 .li-1:nth-child(4)::before {
-  background-image: url(./img/astronaut\ 1.png);
+  background-image: url(./img/astronaut\ 1.svg);
+  background-size: 70px 70px;
 }
 .li-1:nth-child(1) {
   height: 248px;
