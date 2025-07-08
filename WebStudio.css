@@ -11,6 +11,7 @@
   --colr: #ffffff;
   --two-colr: #757575;
   --team-color: #f5f4fa;
+  --icon-feel: #afb1b8;
 }
 body {
   font-family: "Roboto";
@@ -62,14 +63,35 @@ a {
   line-height: auto;
   color: var(--text-color);
 }
-.gmail-head a {
+.header-icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: var(--two-colr);
+  margin-right: 10px;
+  margin-left: 0;
+}
+.header-icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: var(--two-colr);
+  margin-right: 10px;
+  margin-left: 0;
+}
+.header-email-phone {
   display: flex;
-  align-items: center;
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: 2%;
-  line-height: auto;
+  letter-spacing: 0.02em;
   color: var(--two-colr);
+}
+.header-email-phone:hover {
+  color: var(--button-color);
+}
+.header-email-phone:hover .header-icon-envelope {
+  fill: var(--button-color);
+}
+.header-email-phone:hover .header-icon-phone {
+  fill: var(--button-color);
 }
 .navigation > li > a:hover,
 .navigation > li > a:focus {
@@ -234,9 +256,21 @@ a {
   width: 44px;
   height: 44px;
 }
+.container-social-networks:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--button-color);
+}
+.container-social-networks:hover .social-networks-team-icon {
+  fill: var(--colr);
+}
+.icon-team-a {
+  display: flex;
+}
 .social-networks-team-icon {
   width: 20px;
   height: 20px;
+  fill: var(--icon-feel);
 }
 .regular-customers {
   margin-top: 0;
@@ -260,9 +294,24 @@ a {
   height: 60px;
 }
 .customer {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
+}
+.customer:hover {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+}
+.customer:hover .customer-logo {
+  fill: var(--button-color);
+}
+.customer-logo {
+  fill: var(--icon-feel);
 }
 .footer {
   display: flex;
@@ -306,6 +355,13 @@ a {
   margin: 0px;
   gap: 9px;
 }
+.social-networks-footer .container-social-networks {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-networks-footer .container-social-networks:hover {
+  background-color: var(--button-color);
+}
 .social-networks-footer {
   margin-top: 12px;
 }
@@ -317,4 +373,7 @@ a {
   color: var(--colr);
   margin-top: 0px;
   margin-bottom: 20px;
+}
+.social-networks-footer .social-networks-team-icon {
+  fill: var(--colr);
 }
