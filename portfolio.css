@@ -50,6 +50,10 @@ h4 {
   justify-content: space-between;
   align-items: center;
   height: 80px;
+}
+.line {
+  border: 1px solid var(--border-2);
+  height: 0px;
   margin-top: 0;
   margin-bottom: 94px;
 }
@@ -86,6 +90,7 @@ h4 {
 }
 .header-email-phone {
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -131,10 +136,12 @@ h4 {
   color: var(--button-color);
 }
 .button1 {
-  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 3%;
-  line-height: 1.625;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
   border-radius: 4px;
   border: none;
   width: 73px;
@@ -143,10 +150,12 @@ h4 {
   margin: 8px;
 }
 .button2 {
-  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 3%;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
   border-radius: 4px;
   border: none;
   width: 125px;
@@ -155,10 +164,12 @@ h4 {
   margin: 8px;
 }
 .button3 {
-  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 3%;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
   border-radius: 4px;
   border: none;
   width: 112px;
@@ -167,10 +178,12 @@ h4 {
   margin: 8px;
 }
 .button4 {
-  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 3%;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
   border-radius: 4px;
   border: none;
   width: 103px;
@@ -179,10 +192,12 @@ h4 {
   margin: 8px;
 }
 .button5 {
-  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 3%;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
   border-radius: 4px;
   border: none;
   width: 130px;
@@ -199,9 +214,17 @@ h4 {
 }
 .nav-button > li > button:hover,
 .nav-button > li > button:focus {
-  background-color: var(--button-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background: var(--button-color);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--colr);
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 .text-project {
   display: flex;
@@ -226,8 +249,10 @@ h4 {
 }
 .project-nav > li:hover,
 .project-nav > li:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background: var(--colr);
+  border: 1px solid var(--border-color);
 }
 .project-nav {
   display: flex;
