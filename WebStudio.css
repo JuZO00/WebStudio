@@ -12,6 +12,7 @@
   --two-colr: #757575;
   --team-color: #f5f4fa;
   --icon-feel: #afb1b8;
+  --text-absolute: rgba(47, 48, 58, 0.8);
 }
 body {
   font-family: "Roboto";
@@ -203,6 +204,30 @@ a {
 .what-we-do {
   margin-top: 0;
   margin-bottom: 188px;
+}
+.img-wd-item {
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+}
+.text-what-wd {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--text-absolute);
+  width: 100%;
+  height: 70px;
+  padding: 27px 95px;
+}
+.text-what-wd h3 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--colr);
+  text-wrap: nowrap;
 }
 .images {
   display: flex;
