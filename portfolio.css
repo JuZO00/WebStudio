@@ -109,6 +109,18 @@ h4 {
 .navigation > li > a:focus {
   color: var(--button-color);
 }
+.navigation > li > a:hover::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: var(--button-color);
+  color: var(--button-color);
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 45px;
+  border-radius: 2px;
+}
 .gmail-number > li > a:hover,
 .gmail-number > li > a:focus {
   color: var(--button-color);
@@ -117,12 +129,13 @@ h4 {
   display: flex;
   gap: 50px;
 }
-.gmail-number > li > a {
+.navigation > li > a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
-  color: var(--two-colr);
+  color: var(--text-color);
+  position: relative;
 }
 .logo {
   font-family: "Raleway";

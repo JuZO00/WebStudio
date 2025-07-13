@@ -63,6 +63,23 @@ a {
   letter-spacing: 2%;
   line-height: auto;
   color: var(--text-color);
+  position: relative;
+}
+.navigation > li > a:hover::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-color: var(--button-color);
+  color: var(--button-color);
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 45px;
+  border-radius: 2px;
+}
+.navigation > li > a:hover,
+.navigation > li > a:focus {
+  color: var(--button-color);
 }
 .header-icon-envelope {
   width: 16px;
@@ -94,10 +111,6 @@ a {
 }
 .header-email-phone:hover .header-icon-phone {
   fill: var(--button-color);
-}
-.navigation > li > a:hover,
-.navigation > li > a:focus {
-  color: var(--button-color);
 }
 .gmail-number {
   display: flex;
@@ -235,6 +248,14 @@ a {
   gap: 30px;
   margin-bottom: 188px;
 }
+.our-team {
+  margin-top: 0;
+  margin-bottom: 94px;
+  padding-top: 92px;
+  padding-bottom: 94px;
+  height: 708px;
+  background: var(--team-color);
+}
 .team {
   display: flex;
   justify-content: center;
@@ -270,10 +291,6 @@ a {
   font-size: 16px;
   line-height: auto;
   color: var(--two-colr);
-}
-.our-team {
-  margin-top: 0;
-  margin-bottom: 188px;
 }
 .social-networks-team {
   display: flex;
