@@ -57,7 +57,7 @@ a {
   display: flex;
   gap: 50px;
 }
-.navigation > li > a {
+.nav-item > a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
@@ -65,7 +65,7 @@ a {
   color: var(--text-color);
   position: relative;
 }
-.navigation > li > a:hover::after {
+.nav-item > a:hover::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -77,8 +77,8 @@ a {
   top: 45px;
   border-radius: 2px;
 }
-.navigation > li > a:hover,
-.navigation > li > a:focus {
+.nav-item > a:hover,
+.nav-item > a:focus {
   color: var(--button-color);
 }
 .header-icon-envelope {
@@ -102,6 +102,7 @@ a {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--two-colr);
+  border: none;
 }
 .header-email-phone:hover {
   color: var(--button-color);
@@ -425,4 +426,44 @@ a {
 }
 .social-networks-footer .social-networks-team-icon {
   fill: var(--colr);
+}
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.modal {
+  background-color: var(--colr);
+  padding: 40px;
+  border-radius: 4px;
+  width: 528px;
+  height: 581px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.is-hidden {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.butt-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: var(--colr);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.d-butmodal {
+  display: flex;
+  justify-content: flex-end;
 }
