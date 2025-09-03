@@ -103,6 +103,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--two-colr);
   border: none;
+  background-color: var(--colr);
 }
 .header-email-phone:hover {
   color: var(--button-color);
@@ -437,6 +438,7 @@ a {
   z-index: 2;
 }
 .modal {
+  position: relative;
   background-color: var(--colr);
   padding: 40px;
   border-radius: 4px;
@@ -464,6 +466,70 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .d-butmodal {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.title-modal {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.form-modal {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.form-modal > h6 {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--two-colr);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.conditions-full {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.check-modal {
+  accent-color: var(--button-color);
+}
+.conditions {
+  color: var(--button-color);
+}
+.inp-d-modal {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.svg-inp {
+  display: block;
+  position: absolute;
+  left: 12px;
+}
+.inp-modal {
+  border: none;
+  outline: none;
+  display: block;
+  position: absolute;
+  width: 410px;
+  left: -5px;
+  margin-left: 40px;
 }
