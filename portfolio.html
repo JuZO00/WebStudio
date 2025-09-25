@@ -33,11 +33,16 @@
       </div>
       <ul class="gmail-number">
         <li class="gmail-head">
-          <a href="info@devstudio.com" class="header-email-phone"
-            ><svg class="header-icon-envelope">
-              <use href="./img/header/symbol-defs.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
+          <button
+            href="info@devstudio.com"
+            type="button"
+            class="header-email-phone"
+            data-modal-open
           >
+            <svg class="header-icon-envelope">
+              <use href="./img/header/symbol-defs.svg#icon-envelope"></use></svg
+            >info@devstudio.com
+          </button>
         </li>
         <li>
           <a href="+380961111111" class="header-email-phone"
@@ -52,6 +57,61 @@
     </header>
     <div class="line"></div>
     <main>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <div class="d-butmodal">
+            <button type="button" class="butt-modal" data-modal-close>
+              <svg
+                style="width: 11px; height: 11px; fill: #000"
+                class="svg-modal"
+              >
+                <use href="./img/modal/symbol-defs.svg#icon-Vector"></use>
+              </svg>
+            </button>
+          </div>
+          <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+          <form action="" class="form-modal">
+            <label for="" class="modal-label">Ім'я</label>
+            <div class="d-input">
+              <svg style="width: 15px; height: 15px" class="svg-inp">
+                <use href="./img/modal/symbol-defs.svg#icon-people"></use>
+              </svg>
+              <input type="name" required class="inp-modal inp-style" />
+            </div>
+            <label for="" class="modal-label">Телефон</label>
+            <div class="d-input">
+              <svg style="width: 15px; height: 15px" class="svg-inp">
+                <use href="./img/modal/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <input type="name" required class="inp-modal" />
+            </div>
+            <label for="" class="modal-label">Пошта</label>
+            <div class="d-input">
+              <svg style="width: 15px; height: 15px" class="svg-inp">
+                <use href="./img/modal/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              <input type="email" required class="inp-modal inp-style" />
+            </div>
+            <label for="" class="area-label">Коментар</label
+            ><textarea
+              name=""
+              id=""
+              class="modal-area"
+              placeholder="Введіть текст"
+            ></textarea>
+            <div class="conditions-full">
+              <input type="checkbox" required class="check-modal" />
+              <p>
+                Погоджуюся з розсилкою та приймаю
+                <span><a href="" class="conditions">Умови договору</a></span>
+              </p>
+            </div>
+            <div class="butt-conf-modald">
+              <button class="confirm-modal" type="button">Відправити</button>
+            </div>
+          </form>
+        </div>
+      </div>
       <div class="div-button container">
         <ul class="nav-button">
           <li>
@@ -179,7 +239,22 @@
             </div>
           </div>
         </div>
+        <div class="newsletter container">
+          <h4>Підпишіться на розсилку</h4>
+          <div class="d-newsletter-input">
+            <div class="d-inp-footer">
+              <input type="email" placeholder="E-mail" class="input-foot" />
+            </div>
+            <button type="button" class="button-subscribe-foot">
+              Підписатися
+              <svg class="svg-but-foot" style="width: 24px; height: 24px">
+                <use href="./img/icon send.svg"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>

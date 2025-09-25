@@ -13,6 +13,15 @@
   --team-color: #f5f4fa;
   --icon-feel: #afb1b8;
   --text-absolute: rgba(47, 48, 58, 0.8);
+  --text-area: rgba(117, 117, 117, 0.5);
+  --modal-black: rgba(33, 33, 33, 0.2);
+  --button-modal: rgba(0, 0, 0, 0.1);
+  --backdrop: rgba(0, 0, 0, 0.2);
+  --social-netw-foot: rgba(255, 255, 255, 0.1);
+  --email-footer: rgba(255, 255, 255, 0.6);
+  --d-input-footer: rgba(255, 255, 255, 0.3);
+  --button-1: rgba(0, 0, 0, 0.3);
+  --shadow-but-modal: rgba(0, 0, 0, 0.15);
 }
 body {
   font-family: "Roboto";
@@ -165,7 +174,7 @@ a {
   line-height: 1.8;
   background-color: var(--button-color);
   color: var(--colr);
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 5px var(--button-1);
   border: none;
   border-radius: 4px;
 }
@@ -345,14 +354,14 @@ a {
   height: 60px;
 }
 .customer {
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-feel);
   border-radius: 4px;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
 }
 .customer:hover {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--button-color);
   border-radius: 4px;
   width: 170px;
   height: 92px;
@@ -364,6 +373,7 @@ a {
 .customer-logo {
   fill: var(--icon-feel);
 }
+/*footer*/
 .footer {
   display: flex;
   width: 100%;
@@ -403,18 +413,21 @@ a {
   display: flex;
   flex-direction: column;
   padding: 0px;
-  margin: 0px;
+  margin-right: 93px;
   gap: 9px;
 }
+.contact > li {
+  width: 231px;
+}
+.social-networks-footer {
+  margin-right: 93px;
+}
 .social-networks-footer .container-social-networks {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--social-netw-foot);
   border-radius: 50%;
 }
 .social-networks-footer .container-social-networks:hover {
   background-color: var(--button-color);
-}
-.social-networks-footer {
-  margin-top: 12px;
 }
 .social-networks-footer h4 {
   font-weight: 700;
@@ -428,8 +441,68 @@ a {
 .social-networks-footer .social-networks-team-icon {
   fill: var(--colr);
 }
+.newsletter {
+  margin-right: 12px;
+}
+.d-newsletter-input {
+  display: flex;
+}
+.newsletter h4 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colr);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.d-inp-footer {
+  border: 1px solid var(--d-input-footer);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+}
+.input-foot {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: var(--email-footer);
+}
+.button-subscribe-foot {
+  display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  background: var(--button-color);
+  border: none;
+  box-shadow: 0 4px 4px 0 var(--shadow-but-modal);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--colr);
+  padding-left: 28px;
+}
+.svg-but-foot {
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
+/*footer*/
+/*modal*/
 .backdrop {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--backdrop);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -463,7 +536,10 @@ a {
   height: 30px;
   border-radius: 100%;
   background-color: var(--colr);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--button-modal);
+}
+.butt-modal:hover use {
+  fill: var(--button-color);
 }
 .d-butmodal {
   display: block;
@@ -494,15 +570,17 @@ a {
   color: var(--two-colr);
   margin-top: 0;
   margin-bottom: 4px;
-  display: block;
   margin-bottom: 4px;
+}
+.modal-label {
+  display: block;
 }
 .d-input {
   display: block;
   position: relative;
   align-items: center;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--modal-black);
   border-radius: 4px;
   width: 448px;
   height: 40px;
@@ -518,9 +596,9 @@ a {
   fill: var(--col-b);
 }
 .inp-modal {
+  display: block;
   border: none;
   outline: none;
-  display: block;
   width: 100%;
 }
 .d-input:focus-within {
@@ -529,9 +607,30 @@ a {
 .d-input:focus-within svg {
   fill: var(--button-color);
 }
+.area-label {
+  display: block;
+}
+.modal-area {
+  display: block;
+  border: 1px solid var(--modal-black);
+  outline: none;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--text-area);
+}
+.modal-area:focus {
+  border: 1px solid var(--button-color);
+}
 .conditions-full {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 8px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -541,4 +640,25 @@ a {
 }
 .conditions {
   color: var(--button-color);
+  border-bottom: 1px solid var(--button-color);
 }
+.butt-conf-modald {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.confirm-modal {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 var(--shadow-but-modal);
+  background: var(--button-color);
+  border: none;
+}
+/*modal*/

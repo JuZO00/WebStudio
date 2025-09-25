@@ -70,33 +70,43 @@
           </div>
           <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
           <form action="" class="form-modal">
-            <label for="">Ім'я</label>
+            <label for="" class="modal-label">Ім'я</label>
             <div class="d-input">
               <svg style="width: 15px; height: 15px" class="svg-inp">
                 <use href="./img/modal/symbol-defs.svg#icon-people"></use>
               </svg>
               <input type="name" required class="inp-modal inp-style" />
             </div>
-            <label for="">Телефон</label>
+            <label for="" class="modal-label">Телефон</label>
             <div class="d-input">
               <svg style="width: 15px; height: 15px" class="svg-inp">
                 <use href="./img/modal/symbol-defs.svg#icon-phone"></use>
               </svg>
               <input type="name" required class="inp-modal" />
             </div>
-            <label for="">Пошта</label>
+            <label for="" class="modal-label">Пошта</label>
             <div class="d-input">
               <svg style="width: 15px; height: 15px" class="svg-inp">
                 <use href="./img/modal/symbol-defs.svg#icon-mail"></use>
               </svg>
               <input type="email" required class="inp-modal inp-style" />
             </div>
+            <label for="" class="area-label">Коментар</label
+            ><textarea
+              name=""
+              id=""
+              class="modal-area"
+              placeholder="Введіть текст"
+            ></textarea>
             <div class="conditions-full">
               <input type="checkbox" required class="check-modal" />
               <p>
                 Погоджуюся з розсилкою та приймаю
                 <span><a href="" class="conditions">Умови договору</a></span>
               </p>
+            </div>
+            <div class="butt-conf-modald">
+              <button class="confirm-modal" type="button">Відправити</button>
             </div>
           </form>
         </div>
@@ -171,7 +181,7 @@
         <ul class="images">
           <li class="img-wd-item">
             <img
-              src="./img/img (1) sq.jpg"
+              src="./img/img-work/img (1) sq.jpg"
               alt="Фронтенд"
               class="img-what-wd"
             />
@@ -179,7 +189,7 @@
           </li>
           <li class="img-wd-item">
             <img
-              src="./img/img-1 (1) sq.jpg"
+              src="./img/img-work/img-1 (1) sq.jpg"
               alt="UI/UX Design"
               class="img-what-wd"
             />
@@ -187,7 +197,7 @@
           </li>
           <li class="img-wd-item">
             <img
-              src="./img/img-2 (1) sq.jpg"
+              src="./img/img-work/img-2 (1) sq.jpg"
               alt="Digital design"
               class="img-what-wd"
             />
@@ -201,7 +211,7 @@
           <ul class="team">
             <li>
               <img
-                src="./img/img (1)sq.jpg"
+                src="./img/img-people/img (1)sq.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
                 height="260"
@@ -247,7 +257,7 @@
             </li>
             <li>
               <img
-                src="./img/img-1sq.jpg"
+                src="./img/img-people/img-1sq.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
                 height="260"
@@ -293,7 +303,7 @@
             </li>
             <li>
               <img
-                src="./img/img-2 (1)sq.jpg"
+                src="./img/img-people/img-2 (1)sq.jpg"
                 alt="Микола Тарасов"
                 width="270"
                 height="260"
@@ -339,7 +349,7 @@
             </li>
             <li>
               <img
-                src="./img/img-3 (1)sq.jpg"
+                src="./img/img-people/img-3 (1)sq.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
                 height="260"
@@ -475,6 +485,20 @@
                 <use href="./img/our team/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </div>
+          </div>
+        </div>
+        <div class="newsletter container">
+          <h4>Підпишіться на розсилку</h4>
+          <div class="d-newsletter-input">
+            <div class="d-inp-footer">
+              <input type="email" placeholder="E-mail" class="input-foot" />
+            </div>
+            <button type="button" class="button-subscribe-foot">
+              Підписатися
+              <svg class="svg-but-foot" style="width: 24px; height: 24px">
+                <use href="./img/icon send.svg"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
