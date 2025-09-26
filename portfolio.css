@@ -62,6 +62,17 @@ h4 {
   align-items: center;
   height: 80px;
 }
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  line-height: auto;
+  color: var(--color-b);
+}
+.Web {
+  color: var(--button-color);
+}
 .line {
   border: 1px solid var(--border-2);
   height: 0px;
@@ -78,12 +89,43 @@ h4 {
   display: flex;
   gap: 50px;
 }
-.navigation > li > a {
+.navigation a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
   line-height: auto;
   color: var(--text-color);
+  position: relative;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation a:hover {
+  color: var(--button-color);
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -32px;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.25s linear, transform 0.25s linear;
+}
+.navigation a:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+.gmail-number {
+  display: flex;
+  gap: 50px;
+}
+.gmail-head > a:hover,
+.gmail-head > a:focus {
+  color: var(--button-color);
 }
 .header-icon-envelope {
   width: 16px;
@@ -91,6 +133,7 @@ h4 {
   fill: var(--two-colr);
   margin-right: 10px;
   margin-left: 0;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon-phone {
   width: 10px;
@@ -98,6 +141,7 @@ h4 {
   fill: var(--two-colr);
   margin-right: 10px;
   margin-left: 0;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-email-phone {
   display: flex;
@@ -108,6 +152,7 @@ h4 {
   color: var(--two-colr);
   border: none;
   background-color: var(--colr);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-email-phone:hover {
   color: var(--button-color);
@@ -118,48 +163,12 @@ h4 {
 .header-email-phone:hover .header-icon-phone {
   fill: var(--button-color);
 }
-.navigation > li > a:hover,
-.navigation > li > a:focus {
-  color: var(--button-color);
-}
-.navigation > li > a:hover::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  background-color: var(--button-color);
-  color: var(--button-color);
-  width: 100%;
-  height: 4px;
-  left: 0;
-  top: 45px;
-  border-radius: 2px;
-}
-.gmail-number > li > a:hover,
-.gmail-number > li > a:focus {
-  color: var(--button-color);
-}
-.gmail-number {
+.nav-button {
   display: flex;
-  gap: 50px;
-}
-.navigation > li > a {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 2%;
-  line-height: auto;
-  color: var(--text-color);
-  position: relative;
-}
-.logo {
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 3%;
-  line-height: auto;
-  color: var(--color-b);
-}
-.Web {
-  color: var(--button-color);
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 .button1 {
   font-weight: 500;
@@ -174,6 +183,9 @@ h4 {
   height: 38px;
   padding: 6px 25px 6px 25px;
   margin: 8px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button2 {
   font-weight: 500;
@@ -188,6 +200,9 @@ h4 {
   height: 38px;
   padding: 6px 22px 6px 22px;
   margin: 8px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button3 {
   font-weight: 500;
@@ -202,6 +217,9 @@ h4 {
   height: 38px;
   padding: 6px 22px 6px 22px;
   margin: 8px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button4 {
   font-weight: 500;
@@ -216,6 +234,9 @@ h4 {
   height: 38px;
   padding: 6px 22px 6px 22px;
   margin: 8px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button5 {
   font-weight: 500;
@@ -230,13 +251,9 @@ h4 {
   height: 38px;
   padding: 6px 22px 6px 22px;
   margin: 8px;
-}
-.nav-button {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 50px;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-button > li > button:hover,
 .nav-button > li > button:focus {
@@ -252,6 +269,31 @@ h4 {
   text-align: center;
   color: var(--colr);
 }
+.all-project {
+  margin-bottom: 94px;
+}
+.project-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+.project-nav > li {
+  cursor: pointer;
+  height: 404px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-nav > li:hover,
+.project-nav > li:focus {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background: var(--colr);
+  border: 1px solid var(--border-color);
+}
 .project-nav > li > div > p {
   margin-top: 0;
   margin-right: 0;
@@ -262,17 +304,9 @@ h4 {
   line-height: 1.8;
   color: var(--two-colr);
 }
-.project-nav > li {
-  cursor: pointer;
-  height: 404px;
-  position: relative;
-  overflow: hidden;
-  z-index: 3;
-}
 .project-nav > li > img {
   position: relative;
   overflow: hidden;
-  z-index: 1;
 }
 .overlay-card {
   top: 0;
@@ -288,8 +322,7 @@ h4 {
   padding: 63px 24px;
   position: absolute;
   transform: translateY(100%);
-  transition: transform 0.2s linear;
-  z-index: 2;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-nav > li:hover .overlay-card,
 .project-nav > li:focus .overlay-card {
@@ -305,28 +338,6 @@ h4 {
   padding-bottom: 20px;
   background-color: var(--colr);
   position: inherit;
-  z-index: 2;
-}
-
-.project-nav > li:hover,
-.project-nav > li:focus {
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
-    0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background: var(--colr);
-  border: 1px solid var(--border-color);
-}
-.project-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 0;
-}
-.project-nav > li {
-  border: 1px solid var(--border-color);
-}
-.all-project {
-  margin-bottom: 94px;
 }
 .social-networks-team {
   display: flex;
@@ -358,7 +369,6 @@ h4 {
   height: 20px;
   fill: var(--icon-feel);
 }
-
 /*footer*/
 .footer {
   display: flex;
@@ -411,6 +421,7 @@ h4 {
 .social-networks-footer .container-social-networks {
   background-color: var(--social-netw-foot);
   border-radius: 50%;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-networks-footer .container-social-networks:hover {
   background-color: var(--button-color);
@@ -494,22 +505,27 @@ h4 {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 1;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
 }
 .modal {
-  position: relative;
+  position: absolute;
   background-color: var(--colr);
   padding: 40px;
   border-radius: 4px;
   width: 528px;
   height: 581px;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-hidden {
-  display: none;
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .no-scroll {
   overflow: hidden;
