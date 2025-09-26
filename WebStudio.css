@@ -22,6 +22,7 @@
   --d-input-footer: rgba(255, 255, 255, 0.3);
   --button-1: rgba(0, 0, 0, 0.3);
   --shadow-but-modal: rgba(0, 0, 0, 0.15);
+  --card-portfolio-color: rgba(33, 150, 243, 0.9);
 }
 body {
   font-family: "Roboto";
@@ -653,7 +654,7 @@ a {
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #fff;
+  color: var(--colr);
   border-radius: 4px;
   width: 200px;
   height: 50px;
